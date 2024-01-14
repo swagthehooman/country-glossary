@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import data from '../../data.json';
 import { useContext } from 'react';
 import { ThemeContext } from '../ThemeContext';
 

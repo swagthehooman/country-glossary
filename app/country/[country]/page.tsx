@@ -2,7 +2,6 @@
 
 import { nunito_sans } from "@/app/fontConsts"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import data from '../../../data.json'
 import Navbar from "@/app/Components/Navbar";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "@/app/ThemeContext";

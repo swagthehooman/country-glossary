@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Country Glossary App
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+Ever wanted to have a quick access to all countries in the world? No worries, Country Glossary website is there to help you. This website is a [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca/hub). Users can simply surf through the website and select a country of their choice from region filter or search bar. This challenge is basically a test for theme change and api integrations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Screenshots
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(./design/desktop-design-home-dark.jpg)
+(./design/desktop-design-detail-dark.jpg)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Information displayed
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Users can have a quick glance of country's flag, population, region, capital on the homepage. On selection of a particular country card, users will be able to have a detailed view of the country's native name, population, region, sub region, capital, border countries, TLD, area in sqr feets, currencies and languages spoken. They can also view the location of the country on google maps link provided.
 
-## Learn More
+## API information
 
-To learn more about Next.js, take a look at the following resources:
+This project is built using [Rest Countries api](https://restcountries.com/). Visit the website for more information on the REST Api Endpoints.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tools/Frameworks used for the project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    1) Next.js for frontend
+    2) Tailwind css for styling
+    3) Built using Typescript
 
-## Deploy on Vercel
+## Deployments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Live at [Site Link](https://country-glossary-swagthehoomans-projects.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Github Repo at [Github link](https://github.com/swagthehooman/country-glossary)
+
+## Future enhancements
+
+    1) Git Actions testing
+    2) Responsive design
+    3) Use of better data fetching techinques of Next.js
