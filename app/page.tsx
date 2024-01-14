@@ -39,7 +39,7 @@ export default function Home() {
   }
 
   const handleFilterOptionClick = (e: React.MouseEvent<HTMLElement>) => {
-    filterSelection.current = e.target.outerText
+    filterSelection.current = e.currentTarget.outerText
     setShowFilterOptions((prev: Boolean) => {
       return !prev
     })
@@ -91,7 +91,7 @@ export default function Home() {
 
         </div>
         <div className="grid grid-cols-4 m-16 gap-16">
-          {countryListByRegion.map(i => <CountryTile countryData={i} />)}
+          {countryListByRegion.map((i, index) => <CountryTile key={index} countryData={i} />)}
         </div>
       </section>
     </main>
