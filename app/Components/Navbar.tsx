@@ -11,7 +11,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className={`${mode ? "bg-dark-blue-dark-element" : "bg-white-light-element"} p-4 pl-16 pr-16 flex justify-between text-xl`}>
+        <nav className={`${mode ? "bg-dark-blue-dark-element" : "bg-white-light-element"} p-4 pl-16 pr-16 flex justify-between text-xl max-[640px]:w-full max-[640px]:gap-2 max-[640px]:p-4 max-[640px]:text-sm`}>
             <p>Where in the world?</p>
             <button onClick={handleModeChange} className="flex gap-2 cursor-pointer">
                 {mode ? <DarkModeIcon /> : <LightModeIcon />}
