@@ -1,7 +1,7 @@
 'use server'
 
 export async function getCountryData(country: String) {
-    const res = await fetch(`https://restcountries.com/v3.1/name/${country}?fullText=true`)
+    const res = await fetch(`https://restcountries.com/v3.1/name/${country}?fullText=true`, { cache: "no-cache" })
     if (!res) {
 
     }
@@ -40,7 +40,7 @@ export async function getCountryData(country: String) {
 }
 
 export async function getCountryListByHalfName(country: String) {
-    const res = await fetch(`https://restcountries.com/v3.1/name/${country}`)
+    const res = await fetch(`https://restcountries.com/v3.1/name/${country}`, { cache: "no-cache" })
     if (!res) {
         throw new Error('Failed to fetch data');
     }
@@ -61,7 +61,7 @@ export async function getCountryListByHalfName(country: String) {
 }
 
 export async function getCountryByRegion(region: String) {
-    const res = await fetch(`https://restcountries.com/v3.1/region/${region}`, { cache: "force-cache" });
+    const res = await fetch(`https://restcountries.com/v3.1/region/${region}`, { cache: "no-cache" });
     if (!res) {
         throw new Error('Failed to fetch data');
     }
